@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  start_date: 2020-08-03 18:36:48
+  end_date: 2020-08-03 18:36:48
+  status: MyString
+  rental: one
+
+two:
+  user: two
+  start_date: 2020-08-03 18:36:48
+  end_date: 2020-08-03 18:36:48
+  status: MyString
+  rental: two
