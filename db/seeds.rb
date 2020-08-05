@@ -126,7 +126,7 @@ end
     category = Rental::CATEGORIES.sample
     color = set_color(category)
     image = set_image(category)
-    name = "#{['amaizing', 'fancy', 'fashionable'].sample.capitalize} #{color.capitalize} #{category}"
+    name = "#{['amazing', 'fancy', 'fashionable'].sample.capitalize} #{color.capitalize} #{category}"
     occasion = Rental::OCCASIONS.sample
     size = ["S", "M", "L", "XL", "XXL"].sample
     r = Rental.create!(name: name, category: category, occasion: occasion, size: size, available: true, rented: false, color: color, user: u, image: image)
