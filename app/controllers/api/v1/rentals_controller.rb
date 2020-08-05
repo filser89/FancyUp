@@ -8,6 +8,10 @@ class Api::V1::RentalsController < Api::V1::BaseController
 
     end
 
+    def destroy
+    @rental.destroy
+    render json: { status: :story_deleted }
+    end
   private
 
   def set_rental
