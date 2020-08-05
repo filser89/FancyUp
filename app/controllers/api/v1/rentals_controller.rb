@@ -1,16 +1,32 @@
 class Api::V1::RentalsController < Api::V1::BaseController
   before_action :set_rental, only: [ :show, :update, :destroy ]
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
-    def index
-    @rentals = Rental.all
-    end
-    def show
+  def index
+  @rentals = Rental.all
+  end
 
+  def show; end
+
+  def create
+    @rental = Rental.new(rental_params)
+    if @rental.save
+      render :show
+    else
+      render_error
     end
+  end
 
   private
 
   def set_rental
-      @rental = Rental.find(params[:id])
+    @rental = Rental.find(params[:id])
+  end
+
+  def rental_params
+    params.require(:rental).permit(:name, :category, :occasion)
+  end
+
+  def render_error
+    render json: { error: @rental.errors.full_messages }
   end
 end
