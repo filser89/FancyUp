@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_03_103648) do
+ActiveRecord::Schema.define(version: 2020_08_04_100740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,13 @@ ActiveRecord::Schema.define(version: 2020_08_03_103648) do
     t.string "open_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "nickName"
+    t.string "country"
+    t.string "gender"
+    t.string "city"
+    t.string "province"
+    t.string "avatarUrl"
+    t.string "language"
   end
 
   add_foreign_key "orders", "rentals"
