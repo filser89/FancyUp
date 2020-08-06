@@ -18,10 +18,19 @@ class Api::V1::RentalsController < Api::V1::BaseController
     end
   end
 
-    def destroy
+  def update
+    if @rental.update(rental_params)
+      render :show
+    else
+      render_error
+    end
+  end
+
+  def destroy
     @rental.destroy
     render json: { status: :story_deleted }
-    end
+  end
+
   private
 
   def set_rental
