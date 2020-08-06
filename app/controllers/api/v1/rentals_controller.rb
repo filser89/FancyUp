@@ -8,7 +8,9 @@ class Api::V1::RentalsController < Api::V1::BaseController
   def show; end
 
   def create
+    @user = User.last
     @rental = Rental.new(rental_params)
+    @rental.user = @user
     if @rental.save
       render :show
     else
@@ -27,7 +29,7 @@ class Api::V1::RentalsController < Api::V1::BaseController
   end
 
   def rental_params
-    params.require(:rental).permit(:name, :category, :occasion)
+    params.require(:rental).permit(:name, :category, :occasion, :size, :color)
   end
 
   def render_error
