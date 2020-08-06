@@ -2,7 +2,7 @@ class Api::V1::RentalsController < Api::V1::BaseController
   before_action :set_rental, only: [ :show, :update, :destroy ]
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
   def index
-  @rentals = Rental.all
+    @rentals = Rental.all
   end
 
   def show; end
@@ -31,7 +31,16 @@ class Api::V1::RentalsController < Api::V1::BaseController
     render json: { status: :story_deleted }
   end
 
+  def list_user_rentals
+    @user = User.find(params[:user_id])
+    @rentals = @user.rentals
+  end
+
   private
+
+  # def set_user
+  #   @user = User.find(params[])
+  # end
 
   def set_rental
     @rental = Rental.find(params[:id])
