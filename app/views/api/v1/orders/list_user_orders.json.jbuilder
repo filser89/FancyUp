@@ -1,6 +1,6 @@
 json.orders do
   json.array! @orders do |order|
-    json.extract! order, :id, :start_date, :end_date, :status
+    json.extract! order, :id, :start_date, :end_date, :status, :address
     json.start_date order.start_date.strftime("%b %d, %Y")
     json.end_date order.end_date.strftime("%b %d, %Y")
 
