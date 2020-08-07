@@ -47,7 +47,7 @@ class Api::V1::RentalsController < Api::V1::BaseController
   end
 
   def rental_params
-    params.require(:rental).permit(:name, :category, :occasion, :size, :color)
+    params.require(:rental).permit(:name, :category, :occasion, :size, :color, :image)
   end
 
   def render_error
