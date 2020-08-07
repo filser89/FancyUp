@@ -8,7 +8,7 @@ class Api::V1::RentalsController < Api::V1::BaseController
   def show; end
 
   def create
-    @user = User.last
+    @user = User.find(params[:user_id])
     @rental = Rental.new(rental_params)
     @rental.user = @user
     if @rental.save
