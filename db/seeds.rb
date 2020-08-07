@@ -80,12 +80,12 @@ end
 
 def set_image(category)
   gray_suit = "https://handcmediastorage.blob.core.windows.net/productimages/JK/JKPRAS01-F30V-121332-800px-1040px.jpg"
-  blue_pants = "https://www.lafuma.com/media/catalog/product/cache/18/image/9df78eab33525d08d6e5fb8d27136e95/l/f/lfv11318-6730-access-cargo-pants-bleu_1.jpg"
+  blue_pants = "https://i.ebayimg.com/images/g/NmIAAOSwKc1cPz-v/s-l1600.jpg"
   red_tie = "https://www.tiesrus.co.uk/images/pre-tied-burgundy-satin-boys-tie-age-4-7-p855-13090_zoom.jpg"
   white_shirt = "https://agorawear.co.bw/java_content/uploads/2019/11/Agora-Wear_3307.jpeg"
-  black_coat = "https://www.roddandgunn.com/dw/image/v2/BBRS_PRD/on/demandware.static/-/Sites-roddandgunn-master-catalog/default/dw37cf1850/images/001624/BP0549_GRANITE_FT_LGE.jpg?sw=458&sh=565&sm=fit"
+  black_coat = "https://media.mauvetree.com/wp-content/uploads/2019/02/Justified-TV-Series-Raylan-Givens-Trench-Coat.jpg"
   black_jacket = "https://www.dunhill.com/product_image/12249965vf/f/w750_be4e4e4.jpg"
-  brown_sweater = "https://images.tailorstore.com/YToyOntzOjU6IndpZHRoIjtpOjYwMDtzOjY6ImhlaWdodCI7aTo2MDA7fQ%3D%3D/images/catalog/crew-neck-merino-wool-sweater-camel-7356.jpg"
+  brown_sweater = "https://clothbase.s3.amazonaws.com/uploads/43c6c4ee-6204-4ea1-a423-ea33d42d830a/image.jpg"
 
   brown_belt = "https://images-na.ssl-images-amazon.com/images/I/912gy9ku2VL._UL1500_.jpg"
   black_shoes = "https://5.imimg.com/data5/TV/EM/MY-8852934/formal-shoes-500x500.jpg"
