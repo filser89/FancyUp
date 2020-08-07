@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       post "users", to: "users#login", as: "login"
-      resources :users, only: [:update] do
+      resources :users, only: [:show, :update] do
         get :rentals, to: "rentals#list_user_rentals", as: "user_rentals"
         get :orders, to: "orders#list_user_orders", as: "user_orders"
 
