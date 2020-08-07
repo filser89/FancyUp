@@ -80,7 +80,7 @@ end
 
 def set_image(category)
   gray_suit = "https://handcmediastorage.blob.core.windows.net/productimages/JK/JKPRAS01-F30V-121332-800px-1040px.jpg"
-  blue_pants = "https://i.ebayimg.com/images/g/NmIAAOSwKc1cPz-v/s-l1600.jpg"
+  blue_pants = "https://ace-denim.com/wp-content/uploads/2019/09/ADIN12_CHINO-BLUE_FRONT.jpg"
   red_tie = "https://www.tiesrus.co.uk/images/pre-tied-burgundy-satin-boys-tie-age-4-7-p855-13090_zoom.jpg"
   white_shirt = "https://agorawear.co.bw/java_content/uploads/2019/11/Agora-Wear_3307.jpeg"
   black_coat = "https://media.mauvetree.com/wp-content/uploads/2019/02/Justified-TV-Series-Raylan-Givens-Trench-Coat.jpg"
